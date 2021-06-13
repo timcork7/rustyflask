@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <img src="http://www.naturalprogramming.com/images/smilingpython.gif">
+        <ul>
+        {% for member in members: %}
+        <li>{{ member[0] + '-' + member[1] + '-' + member[2] }}</li>
+	{% endfor %}
+	</ul>
+    </body>
+</html>
